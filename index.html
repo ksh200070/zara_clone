@@ -11,7 +11,7 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>
+  <body class="home-page">
     <!-- 헤더 -->
     <div id="header" class="flex">
       <div id="left-header" class="flex">
@@ -61,7 +61,7 @@
       <div id="woman" style="position: relative">
         <!-- 우측 하단 메뉴들 -->
         <nav id="slider-nav-container" style="position: absolute">
-          <ul>
+          <ul id="woman-slider-list">
             <li id="woman-new" class="slider-nav slider-nav-selected">
               <button>NEW</button>
             </li>
@@ -79,16 +79,46 @@
         </nav>
         <div>
           <ul>
-            <li>
+            <li class="slider-content">
               <img
-                src="https://static.zara.net/photos///contents/mkt/spots/ss23-north-woman-new/subhome-xmedia-05-2//w/1024/IMAGE-portrait-ipad-fill-60fdc31c-38b4-4a59-9a03-bd1f61a879bb-default_0.jpg?ts=1675340779499"
+                id="woman-new-image"
+                src="https://static.zara.net/photos///contents/mkt/spots/ss23-north-woman-new/subhome-xmedia-05-2//w/2378/IMAGE-landscape-fill-2f6b6791-7c66-47e4-a7ab-d2ffb1eb50de-default_0.jpg?ts=1675340776358"
                 alt=""
+                class="slider-content-image selected-image"
               />
             </li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li class="slider-content">
+              <img
+                id="woman-beauty-image"
+                src="https://static.zara.net/photos///contents/mkt/spots/ss23-north-woman-collection/subhome-xmedia-05//w/2358/IMAGE-landscape-fill-47a0f280-02d5-46db-9081-ed2f06faf6af-default_0.jpg?ts=1675343907185"
+                alt=""
+                class="slider-content-image"
+              />
+            </li>
+            <li class="slider-content">
+              <img
+                id="woman-collection-image"
+                src="https://static.zara.net/photos///contents/mkt/spots/ss23-north-woman-beauty/subhome-xmedia-05-2//w/2880/IMAGE-landscape-default-fill-4dd99773-5abb-4ffd-a017-0fa4daaded36-default_0.jpg?ts=1675341893507"
+                alt=""
+                class="slider-content-image"
+              />
+            </li>
+            <li class="slider-content">
+              <img
+                id="woman-sale-image"
+                src="https://static.zara.net/photos///contents/mkt/spots/aw22-sale/subhome-xmedia-launch-woman//SVG-landscape-fill-cb8fdf26-eacb-44b7-b874-ffedf5585f58-ko_KR@KR.svg?ts=1673720810202"
+                alt=""
+                class="slider-content-image"
+              />
+            </li>
+            <li class="slider-content">
+              <img
+                id="woman-join-life-image"
+                src="https://static.zara.net/photos///contents/mkt/spots/ss23-north-woman-join-life/subhome-xmedia-03//w/2880/IMAGE-landscape-default-fill-3fc23bc5-3543-4252-a081-572fc5ca7479-default_0.jpg?ts=1674063983437"
+                alt=""
+                class="slider-content-image"
+              />
+            </li>
             <!-- footer  -->
             <li>
               <div>뉴스레터에 가입하세요</div>
@@ -108,9 +138,10 @@
           </ul>
         </div>
       </div>
-      <div id="man"></div>
-      <div id="kid"></div>
-      <div id="beauty"></div>
+      <div id="man" class="slider-content"></div>
+      <div id="kid" class="slider-content"></div>
+      <div id="beauty" class="slider-content"></div>
     </div>
+    <script type="text/javascript" src="index.js"></script>
   </body>
 </html>
